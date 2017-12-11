@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="APP_NAME" value="themis-message"/>
+    <!--<property name="LOG_DIR" value="/root/oxchains/${APP_NAME}"/>-->
+    <property name="LOG_DIR" value="D:/logs/${APP_NAME}"/>
+    <springProperty scope="context" name="logLevel" source="log.level"/>
+    <appender name="rollingFileINFO" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/${APP_NAME}.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/${APP_NAME}.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!-- 30 day -->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%p] - %msg %n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>debug</level>
+        </filter>
+    </appender>
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%p] - %msg %n</pattern>
+        </encoder>
+    </appender>
+    <logger name="org.springframework" level="DEBUG"/>
+
+
+    <!-- 以下是日志管理系统的配置 -->
+    <appender name="logstash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
+        <!--logstash服务器，目前有两个-->
+        <destination>192.168.1.191:4560</destination>
+        <destination>192.168.1.192:4560</destination>
+        <encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder">
+            <!--应用的名称，每个应用最好区分开-->
+            <customFields>{"appname":"${APP_NAME}"}</customFields>
+        </encoder>
+        <connectionStrategy>
+            <roundRobin>
+                <connectionTTL>5 minutes</connectionTTL>
+            </roundRobin>
+        </connectionStrategy>
+    </appender>
+
+    <root level="DEBUG">
+        <appender-ref ref="console"/>
+        <appender-ref ref="logstash"/>
+    </root>
+
+</configuration>

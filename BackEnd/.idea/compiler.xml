@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="themis-arbitrate" />
+        <module name="themis-chat" />
+        <module name="themis-common" />
+        <module name="themis-config" />
+        <module name="themis-eureka" />
+        <module name="themis-file" />
+        <module name="themis-message" />
+        <module name="themis-notice" />
+        <module name="themis-repo" />
+        <module name="themis-user" />
+        <module name="themis-zuul" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bitcoin-rpc-client" target="1.8" />
+      <module name="themis" target="1.8" />
+      <module name="themis-arbitrate" target="1.8" />
+      <module name="themis-chat" target="1.8" />
+      <module name="themis-common" target="1.8" />
+      <module name="themis-config" target="1.8" />
+      <module name="themis-eureka" target="1.8" />
+      <module name="themis-file" target="1.8" />
+      <module name="themis-message" target="1.8" />
+      <module name="themis-notice" target="1.8" />
+      <module name="themis-order" target="1.8" />
+      <module name="themis-repo" target="1.8" />
+      <module name="themis-user" target="1.8" />
+      <module name="themis-zuul" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

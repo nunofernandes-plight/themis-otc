@@ -1,0 +1,39 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### BackEnd ###
+BackEnd/.idea
+BackEnd/*.iws
+BackEnd/*.iml
+BackEnd/*.ipr
+
+BackEnd/themis-user/target
+BackEnd/themis-user/*.iml
+BackEnd/themis-chat/target
+BackEnd/themis-chat/*.iml
+BackEnd/themis-arbitrate/target
+BackEnd/themis-arbitrate/*.iml
+
+BackEnd/themis-common/target
+BackEnd/themis-common/*.iml
+
+### FrontEnd ###
+FrontEnd/.idea
+node_modules/
+FrontEnd/bundle.js
+FrontEnd/npm-debug.log
+.DS_Store
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr

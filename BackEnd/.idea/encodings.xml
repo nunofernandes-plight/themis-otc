@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bitcoin-rpc-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/themis-arbitrate" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/themis-chat" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/themis-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/themis-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/themis-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/themis-file" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/themis-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/themis-message" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/themis-notice" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/themis-order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/themis-repo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/themis-user" charset="UTF-8" />
+  </component>
+</project>

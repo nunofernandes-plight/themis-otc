@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/themis.iml" filepath="$PROJECT_DIR$/themis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/themis-arbitrate/themis-arbitrate.iml" filepath="$PROJECT_DIR$/themis-arbitrate/themis-arbitrate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/themis-chat/themis-chat.iml" filepath="$PROJECT_DIR$/themis-chat/themis-chat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/themis-common/themis-common.iml" filepath="$PROJECT_DIR$/themis-common/themis-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/themis-config/themis-config.iml" filepath="$PROJECT_DIR$/themis-config/themis-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/themis-eureka/themis-eureka.iml" filepath="$PROJECT_DIR$/themis-eureka/themis-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/themis-file/themis-file.iml" filepath="$PROJECT_DIR$/themis-file/themis-file.iml" />
+      <module fileurl="file://$PROJECT_DIR$/themis-message/themis-message.iml" filepath="$PROJECT_DIR$/themis-message/themis-message.iml" />
+      <module fileurl="file://$PROJECT_DIR$/themis-notice/themis-notice.iml" filepath="$PROJECT_DIR$/themis-notice/themis-notice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/themis-repo/themis-repo.iml" filepath="$PROJECT_DIR$/themis-repo/themis-repo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/themis-user/themis-user.iml" filepath="$PROJECT_DIR$/themis-user/themis-user.iml" />
+    </modules>
+  </component>
+</project>

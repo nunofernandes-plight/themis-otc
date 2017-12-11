@@ -1,0 +1,98 @@
+.fl{float: left;}
+.fr{float: right;}
+
+.nl-pagination {
+    display: block;
+    color: #535353;
+    line-height: 29px;
+    text-align: center;
+    font-size: 12px
+}
+.nl-pagination ul{
+    padding: 0;
+    margin: 0;
+}
+/*.ui-pagnation a {float: left; min-width: 30px; height: 30px; padding: 0 7px; vertical-align: middle; text-decoration: none; cursor: pointer;}*/
+/*.ui-pagnation .next,.ui-pagnation .prev {margin: 0 9px; background-color: #f3f4f8; border: 1px solid #00a0e9 }*/
+.nl-pagination .next:before,.nl-pagination .prev:before {
+    content: '<';
+    color: #6c6c6c;
+    font-size: 14px
+}
+.nl-pagination .next:hover,.nl-pagination .prev:hover {
+    border-color: #6c6c6c
+}
+.nl-pagination .next:hover:before,.nl-pagination .prev:hover:before {
+    color: #6c6c6c
+}
+.nl-pagination .disable.next,.nl-pagination .prev.disable,.nl-pagination .disable.next:hover,.nl-pagination .prev.disable:hover {
+    cursor: no-drop;
+}
+.nl-pagination .disable.next:before,.nl-pagination .prev.disable:before {color: #a7a7a7
+}
+.nl-pagination .next:before {
+    content: '>'
+}
+.nl-pagination .next{
+    margin-top: -10px;
+    display: inline-block;
+    margin-left: 1px;
+    vertical-align: bottom;
+}
+.nl-pagination .prev{
+    margin-top: -10px;
+    display: inline-block;
+    margin-right: 1px;
+    vertical-align: bottom;
+}
+.nl-pagination a{
+    color:#6c6c6c;
+}
+.nl-pagination .active{
+    background: #6c6c6c!important;
+    border: 1px solid #6c6c6c;
+    transition: all .3s;
+}
+.nl-pagination .active a{
+    color: white!important;
+}
+.nl-ellipsis{
+    display: inline-block;
+}
+.nl-pagination-item{
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #d9d9d9;
+    background-color: #fff;
+    margin-right: 8px;
+    outline: 0;
+    border-radius: 50%!important;
+    min-width: 20px!important;
+    height: 20px!important;
+    line-height: 20px!important;
+    transition: all .3s ease;
+}
+.nl-pagination-item:hover{
+    border:1px solid #6c6c6c;
+}
+.nl-pagination-item:hover a{
+    color:#6c6c6c ;
+}
+.nl-ellipsis li{
+    display: inline-block;
+    margin-right: 8px;
+}
+.nl-pagination-ellipsis:after{
+    content: "\2022\2022\2022";
+    display: block;
+    letter-spacing: 2px;
+    color: rgba(0,0,0,.25);
+    text-align: center;
+}

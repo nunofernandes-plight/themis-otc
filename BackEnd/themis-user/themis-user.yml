@@ -1,0 +1,47 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: themis-user
+  labels:
+    app: themis-user
+spec:
+  # if your cluster supports it, uncomment the following to automatically create
+  # an external load-balanced IP for the frontend service.
+  #type: NodePort
+  ports:
+    # the port that this service should serve on
+  - port: 8081
+  selector:
+    app: themis-user
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: themis-user
+  # these labels can be applied automatically
+  # from the labels in the pod template if not set
+  labels:
+    app: themis-user
+spec:
+  # this replicas value is default
+  # modify it according to your case
+  replicas: 2
+  # selector can be applied automatically
+  # from the labels in the pod template if not set
+  # selector:
+  #   matchLabels:
+  #     app: guestbook
+  #     tier: frontend
+  template:
+    metadata:
+      labels:
+        app: themis-user
+    spec:
+      containers:
+      - name: themis-user
+        image: 192.168.1.101:5005/oxchains/themis-user:latest
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+        ports:
+        - containerPort: 8081
